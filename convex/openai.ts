@@ -7,7 +7,7 @@ import OpenAI from "openai";
 import { SpeechCreateParams } from "openai/resources/audio/speech.mjs";
 
 const openai = new OpenAI({
-  apiKey: "sk-hKwN1eZh0hVM_2BLQB7eQdgjbqEJ5r0-gpqhXaNUMBT3BlbkFJIf8DNaNnCMv528Dmi2jGMmECpKvb0whpbIvtdHnw4A",
+  apiKey: process.env.OPENAI_API_KEY!,
 })
 
 export const generateAudioAction = action({
