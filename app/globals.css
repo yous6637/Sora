@@ -8,9 +8,18 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #101114;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+
+  }
+  
+  body {
+    /* @apply bg-gradient-to-br from-slate-900 via-orange-900 to-slate-900; */
+  }
 }
+
 
 @layer utilities {
   .input-class {
@@ -60,6 +69,17 @@ html {
   }
   .text-32 {
     @apply text-[32px] leading-normal;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .bg-size-200 {
+    background-size: 200% 200%;
   }
 }
 
